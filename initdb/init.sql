@@ -1371,3 +1371,13 @@ CREATE TABLE IF NOT EXISTS `zenylog` (
   PRIMARY KEY  (`id`),
   INDEX (`type`)
 ) ENGINE=MyISAM AUTO_INCREMENT=1;
+
+-- -----------------------------------------------------
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `pvpranking` (
+  `char_id` INT NOT NULL,
+  `name` VARCHAR(45) NULL,
+  `kill` INT NULL,
+  `death` INT NULL,
+  PRIMARY KEY (`char_id`))
+ENGINE = InnoDB;
